@@ -8,23 +8,30 @@
 </head>
 <body>
     <div class="search-container">
-        <h1>Vuelos</h1>
+        
         <form>
-            <div class="trip-type">
-                <input type="radio" id="roundtrip" name="trip" checked>
-                <label for="roundtrip">Ida y vuelta</label>
-                <input type="radio" id="oneway" name="trip">
-                <label for="oneway">Solo ida</label>
+            <div class="col-2">
+                <div>
+                    <h1 class="title-1">Vuelos</h1>
+                </div>                
+                <div class="trip-type">
+                    <input type="radio" id="roundtrip" name="trip" checked>
+                    <label for="roundtrip">Ida y vuelta</label>
+                    <input type="radio" id="oneway" name="trip">
+                    <label for="oneway">Solo ida</label>
+                </div>
             </div>
-            <div class="inputs">
-                <input type="text" placeholder="Ingresa desde dÃ³nde quieres viajar" aria-label="Origen">
-                <input type="text" placeholder="Ingresa hacia dÃ³nde quieres viajar" aria-label="Destino">
-                <input type="radio" id="oneway" name="direction" checked>
-                <label for="oneway">Ida</label>
-                <input type="radio" id="roundtrip" name="direction">
-                <label for="roundtrip">Vuelta</label>
-            </div>
-            <button type="submit">Buscar</button>
+            <div class="col-2">
+                <div class="inputs">
+                    <input type="text" placeholder="Ingresa desde dónde quieres viajar" aria-label="Origen">
+                    <input type="text" placeholder="Ingresa hacia dónde quieres viajar" aria-label="Destino">
+                    <input type="radio" id="oneway" name="direction" checked>
+                    <label for="oneway">Ida</label>
+                    <input type="radio" id="roundtrip" name="direction">
+                    <label for="roundtrip">Vuelta</label>
+                </div>
+                <button type="submit">Buscar</button>
+            </div>            
         </form>
     </div>
 </body>

@@ -16,10 +16,20 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600%;
+    border-radius: 10px;
 }
 
-h1{
+.col-2{
+    display: flex;
+    justify-content:start;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+h1.title-1{
     color: #333;
+    display: inline;
+    width: 25%;
 }
 
 form{
@@ -32,6 +42,14 @@ form{
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+}
+
+.inputs {
+
+}
+
+.w-50{
+    width: 50%;
 }
 
 .inputs input[type="text"]{
