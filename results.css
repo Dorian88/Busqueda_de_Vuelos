@@ -1,0 +1,93 @@
+body{
+    background-color: #eee;
+}
+
+.results{
+    width: 800px;
+    margin: auto;
+    font-size: large;
+}
+
+.results label{
+    display: block;
+    width: 100%;
+    margin-left: .5em;
+}
+
+.results p{
+    margin-left: .5em;
+}
+
+.results-table{
+    margin-top: .5em;
+}
+
+.result{
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.trip-type-selection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip-type-selection-button{
+    width: 50%;
+    border-radius: 6px;
+    font-size: x-large;
+    border: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    
+}
+
+.selected{
+    border: 2px solid #0EA5E9;
+}
+
+.trip-type-selection-button:first-of-type{
+    margin-right: .5em;
+}
+
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.buy-button{
+    background-color: #0EA5E9;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 70%;
+    height: 70%;
+}
+
+.buy-button-div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.icon-div{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-div img{
+    width: 30px;
+    height: 30px;
+}
+
+.icon-div i{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

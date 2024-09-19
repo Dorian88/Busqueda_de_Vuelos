@@ -15,24 +15,38 @@
                     <h1 class="title-1">Vuelos</h1>
                 </div>                
                 <div class="trip-type">
-                    <input type="radio" id="roundtrip" name="trip" checked>
-                    <label for="roundtrip">Ida y vuelta</label>
-                    <input type="radio" id="oneway" name="trip">
-                    <label for="oneway">Solo ida</label>
+                    <div class="roundtrip-div">
+                        <input type="radio" id="roundtrip" name="trip" checked>
+                        <label for="roundtrip">Ida y vuelta</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="oneway" name="trip">
+                        <label for="oneway">Solo ida</label>
+                    </div>
                 </div>
             </div>
             <div class="col-2">
                 <div class="inputs">
-                    <input type="text" placeholder="Ingresa desde dónde quieres viajar" aria-label="Origen">
-                    <input type="text" placeholder="Ingresa hacia dónde quieres viajar" aria-label="Destino">
-                    <input type="radio" id="oneway" name="direction" checked>
-                    <label for="oneway">Ida</label>
-                    <input type="radio" id="roundtrip" name="direction">
-                    <label for="roundtrip">Vuelta</label>
+                    <div class="inputs-city-selection">
+                        <input type="text" placeholder="Ingresa desde dónde quieres viajar" aria-label="Origen" list="citiesList" required>
+                        <input type="text" placeholder="Ingresa hacia dónde quieres viajar" aria-label="Destino" list="citiesList" required>
+                        <datalist id="citiesList" style="background-color: red;">
+                            <option value="Santa Marta, Magdalena, Colombia">Santa Marta, Magdalena, Colombia</option>
+                            <option value="Medellín, Antioquia, Colombia">Medellín, Antioquia, Colombia</option>
+                            <option value="Bogotá, Cundinamarca, Colombia">Bogotá, Cundinamarca, Colombia</option>
+                        </datalist>
+                    </div>
+                    <div class="inputs-date-selection">
+                        <input type="date" placeholder="Ida">
+                        <input type="date" placeholder="vuelta" id="return-date-input">
+                    </div>
+                    <div class="inputs-search-button">
+                        <button id="submit-button">Buscar</button>
+                    </div>
                 </div>
-                <button type="submit">Buscar</button>
             </div>            
         </form>
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
